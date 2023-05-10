@@ -1,6 +1,5 @@
 import "./App.css";
 import { useState } from "react";
-import CheckLilist from "./components/CheckList";
 import Form from "./components/Form";
 
 function App() {
@@ -9,21 +8,19 @@ function App() {
 
   const STEP_FORM = 0;
   const STEP_COMUNICACION = 1;
+  const STEP_CARACTER = 2;
+  const STEP_LIDERAZGO = 3;
   const [step, setStep] = useState(STEP_FORM);
-  const steps = {
-    [STEP_FORM]: <Form setStep={setStep} />,
-    [STEP_COMUNICACION]: <div className="form" onClick={handleCheck}></div>,
-  };
-
+ 
   // Add/Remove checked item from list
   const handleCheck = (event) => {
-    var updatedList = [...checked];
-    if (event.target.checked) {
-      updatedList = [event.target.value];
-    } else {
-      updatedList.splice(checked.indexOf(event.target.value), 1);
-    }
-    setChecked(updatedList);
+    setStep(0)
+  };
+ const steps = {
+    [STEP_FORM]: <Form setStep={setStep} />,
+    [STEP_COMUNICACION]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>,
+    [STEP_CARACTER]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>,
+    [STEP_LIDERAZGO]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>
   };
 
   // Generate string of checked items
