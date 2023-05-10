@@ -33,6 +33,32 @@ h2{
   justify-content: left;
   border-radius: 10%;
 }
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4ca8af;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e8a
+}
+
+.button:active {
+  background-color: #3e898e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 h3{
   width: auto;
   cursor: pointer;

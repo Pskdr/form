@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Form from "./components/Form";
+import Comunicacion from "./components/Comunicacion";
 
 function App() {
   //const checkList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
@@ -17,9 +18,9 @@ function App() {
   };
  const steps = {
     [STEP_FORM]: <Form setStep={setStep} />,
-    [STEP_COMUNICACION]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>,
-    [STEP_CARACTER]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>,
-    [STEP_LIDERAZGO]: <button className="form" onClick={handleCheck}>{"<-"}Back</button>
+    [STEP_COMUNICACION]: <Comunicacion handleCheck={handleCheck}/>,
+    [STEP_CARACTER]: <button className="button" onClick={handleCheck}>{"< "}Back</button>,
+    [STEP_LIDERAZGO]: <button className="button" onClick={handleCheck}>{"< "}Back</button>
   };
 
   // Generate string of checked items
