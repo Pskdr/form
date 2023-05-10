@@ -3,7 +3,6 @@ import { useState } from "react";
 import Form from "./components/Form";
 
 function App() {
-  const [checked, setChecked] = useState([]);
   //const checkList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
   const STEP_FORM = 0;
