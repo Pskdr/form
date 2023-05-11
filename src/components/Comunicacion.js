@@ -36,6 +36,33 @@ const Comunication = ({ handleCheck }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(answer); // do something with the answers
+    if (questions.length === Object.keys(answer).length) {
+      const sum = Object.values(answer).reduce(
+        (acc, val) => parseInt(acc) + parseInt(val),
+        0
+      );
+      const promedio = sum / questions.length;
+
+      if (promedio <= 5) {
+        alert(
+          "Su promedio es: " +
+            promedio +
+            "\n Para aprender más use este link https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/"
+        );
+      } else {
+        if (5 < promedio && promedio < 7.9) {
+          alert(
+            "Su promedio es: " +
+              promedio +
+              "\n Para aprender más use este link https://www.youtube.com/watch?v=16z28DjRTAA"
+          );
+        } else {
+          alert("Su promedio es: " + promedio + "\n ¡Buen trabajo!");
+        }
+      }
+    } else {
+      alert("Todas las preguntas son obligatorias");
+    }
   };
 
   return (
@@ -56,7 +83,7 @@ const Comunication = ({ handleCheck }) => {
           ))}
         </form>
 
-        <Button handleCheck={handleSubmit} text={"submit"} />
+        <Button handleCheck={handleSubmit} text={"Enviar"} />
       </div>
     </div>
   );
