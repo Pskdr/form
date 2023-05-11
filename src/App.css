@@ -29,7 +29,7 @@ h2{
   height: auto;
   max-height: 70%;
   border-radius: 10%;
-  max-width: 400px;
+  max-width: 500px;
 
 }
 form{
@@ -37,8 +37,8 @@ form{
 }
 .form2 {
   background-color: #f0f8ff;
-  padding: 30px;
-  max-width: 400px;
+  padding: 20px;
+  max-width: 500px;
   justify-content: left;
   border-radius: 100%;
 }
@@ -93,8 +93,6 @@ h4{
   display: flex;
   flex-direction: row;
   margin: auto;
-}
-.checkList {
 }
 .checked-item,
 .not-checked-item {
