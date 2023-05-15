@@ -1,13 +1,28 @@
 import "./App.css";
+import logo from "./resourcers/logo habilidades poderosas.svg";
 import { useState } from "react";
 import Form from "./components/Form";
 import Comunicacion from "./components/Comunicacion";
+import {
+  questions1,
+  questions2,
+  questions3,
+  subtext1,
+  subText2,
+  subText3,
+  link1,
+  link2,
+} from "./resourcers/index";
+import Inicio from "./components/Inicio";
 
 function App() {
   const STEP_FORM = 0;
   const STEP_COMUNICACION = 1;
   const STEP_CARACTER = 2;
   const STEP_LIDERAZGO = 3;
+  const STEP_OTHERS = 4;
+
+  const [showLogo, setLogo] = useState(true);
 
   const [step, setStep] = useState(STEP_FORM);
 
@@ -17,9 +32,37 @@ function App() {
   };
   const steps = {
     [STEP_FORM]: <Form setStep={setStep} />,
-    [STEP_COMUNICACION]: <Comunicacion handleCheck={handleCheck} />,
-    [STEP_CARACTER]: <di></di>,
+    [STEP_COMUNICACION]: (
+      <Comunicacion
+        title={"Comunicación Asertiva"}
+        subText={subtext1}
+        handleCheck={handleCheck}
+        questions={questions1}
+        link1={link1}
+        link2={link2}
+      />
+    ),
+    [STEP_CARACTER]: (
+      <Comunicacion
+        title={"Cáracter"}
+        subText={subText2}
+        handleCheck={handleCheck}
+        questions={questions2}
+        link1={link1}
+        link2={link2}
+      />
+    ),
     [STEP_LIDERAZGO]: (
+      <Comunicacion
+        title={"Liderazgo"}
+        subText={subText3}
+        handleCheck={handleCheck}
+        questions={questions3}
+        link1={link1}
+        link2={link2}
+      />
+    ),
+    [STEP_OTHERS]: (
       <button className="button" onClick={handleCheck}>
         {"< "}Back
       </button>
@@ -31,7 +74,11 @@ function App() {
   // Return classes based on whether item is checked
   //var isChecked = (item) => checked.includes(item) ? "checked-item" : "not-checked-item";
 
-  return <div className="app">{steps[step]}</div>;
+  return showLogo ? (
+    <Inicio logo={logo} setLogo={setLogo} />
+  ) : (
+    <div className="app">{steps[step]}</div>
+  );
 }
 
 export default App;

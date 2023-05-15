@@ -3,35 +3,14 @@ import Button from "./Button.js";
 import Question from "./Question.js";
 import FinalStep from "./FinalStaep.js";
 
-const Comunication = ({ handleCheck }) => {
-  const questions = [
-    {
-      id: 1,
-      question:
-        "¿Pide opiniones, aportes a las personas y los tiene en cuenta?",
-    },
-    {
-      id: 2,
-      question:
-        "¿Es abierto y receptivo , sabe lo que los demás han dicho y han querido decir y valida de manera que sientan que se les ha escuchado?",
-    },
-    {
-      id: 3,
-      question:
-        "¿Tiene gestión emocional, es prudente, sabe actuar  y expresarse con respeto en un momento de estrés?",
-    },
-    {
-      id: 4,
-      question:
-        "¿Sabe lo que quiere y sabe expresarlo?. Se hace entender y se responsabiliza de su comunicación?",
-    },
-    {
-      id: 5,
-      question:
-        "¿Qué tan cómodo le resulta retroalimentar a su equipo en caso de un bajo desempeño?",
-    },
-    // add more questions here
-  ];
+const Comunication = ({
+  title,
+  subText,
+  handleCheck,
+  questions,
+  link1,
+  link2,
+}) => {
   const [answer, setAnswer] = useState({});
 
   const [finalStep, setFinalStep] = useState(true);
@@ -50,9 +29,7 @@ const Comunication = ({ handleCheck }) => {
         setText(
           "Su promedio es: " + promedio + "\n Para aprender más use este link "
         );
-        setLink(
-          "https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/"
-        );
+        setLink(link1);
         setFinalStep(false);
       } else {
         if (5 < promedio && promedio < 7.9) {
@@ -61,11 +38,11 @@ const Comunication = ({ handleCheck }) => {
               promedio +
               "\n Para aprender más use este link: "
           );
-          setLink("https://www.youtube.com/watch?v=16z28DjRTAA");
+          setLink(link2);
           setFinalStep(false);
         } else {
           setText("Su promedio es: " + promedio + "\n ¡Buen trabajo!");
-
+          setLink("");
           setFinalStep(false);
         }
       }
@@ -81,7 +58,8 @@ const Comunication = ({ handleCheck }) => {
         <div className="form2">
           <Button handleCheck={handleCheck} text={"< Back"} />
 
-          <h2>Comunicacion Acertiva</h2>
+          <h2>{title}</h2>
+          <p>{subText}</p>
           <form onSubmit={handleSubmit} className="formfinal">
             {questions.map(({ id, question }) => (
               <Question
