@@ -63,9 +63,20 @@ function App() {
       />
     ),
     [STEP_OTHERS]: (
-      <button className="button" onClick={handleCheck}>
-        {"< "}Back
-      </button>
+      <div className="form">
+        <button className="button" onClick={handleCheck}>
+          {"< "}Back
+        </button>
+        <div className="form2">
+          <h3>solución de conflictos</h3>
+          <h3>pensamiento estratégico</h3>
+          <h3>adaptación al cambio</h3>
+          <h3>orientación a la acción</h3>
+          <h3>trabajo en equipo </h3>
+          <h3>influencia </h3>
+          <h3>toma de decisiones</h3>
+        </div>
+      </div>
     ),
   };
 
