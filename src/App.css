@@ -39,7 +39,7 @@ form{
   background-color: #f0f8ff;
   padding: 20px;
   max-width: 500px;
-  justify-content: left;
+  justify-content: center;
   border-radius: 100%;
 }
 
@@ -136,6 +136,6 @@ h4{
 }
 .logo {
   animation-name: myAnimation;
-  animation-duration: 3000ms;
+  animation-duration: 6000ms;
   animation-fill-mode: forwards;
 }

@@ -4,7 +4,7 @@ const Inicio = ({ logo, setLogo }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLogo(false);
-    }, 3000);
+    }, 6000);
 
     // Clean up the timer when the component is unmounted
     return () => {
