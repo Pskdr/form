@@ -72,7 +72,10 @@ const Comunication = ({
             ))}
           </form>
 
-          <Button handleCheck={handleSubmit} text={"Enviar"} />
+          <center>
+            {" "}
+            <Button handleCheck={handleSubmit} text={"Enviar"} />
+          </center>
         </div>
       ) : (
         <FinalStep text={text} setFinalStep={setFinalStep} link={link} />
