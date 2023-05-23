@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./resourcers/logo habilidades poderosas.svg";
+import logo from "./resourcers/eia.jpeg";
 import { useState } from "react";
 import Form from "./components/Form";
 import Comunicacion from "./components/Comunicacion";
@@ -129,7 +129,7 @@ function App() {
             onClick={() => {
               setInfo(true);
               setInfoText(
-                "Capacidad de ser inspirar positivamente a quienes te rodean y de motivar a otros hacia el éxito."
+                "Capacidad de ser e inspirar positivamente a quienes te rodean y de motivar a otros hacia el éxito."
               );
             }}
           >
