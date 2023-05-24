@@ -10,8 +10,24 @@ import {
   subtext1,
   subText2,
   subText3,
-  link1,
-  link2,
+  liderazgoLink1,
+  liderazgoLink2,
+  liderazgoLink3,
+  liderazgoLink4,
+  liderazgoLink5,
+  liderazgoLink6,
+  asertivaLink1,
+  asertivaLink2,
+  asertivaLink3,
+  asertivaLink4,
+  asertivaLink5,
+  asertivaLink6,
+  caracterLink1,
+  caracterLink2,
+  caracterLink3,
+  caracterLink4,
+  caracterLink5,
+  caracterLink6,
   finalLiderazgoRangoBajo,
   liderazgoRangoMedio,
   finalLiderazgorangoAlto,
@@ -52,8 +68,12 @@ function App() {
         subText={subtext1}
         handleCheck={handleCheck}
         questions={questions1}
-        link1={link1}
-        link2={link2}
+        link1={asertivaLink1}
+        link2={asertivaLink2}
+        link3={asertivaLink3}
+        link4={asertivaLink4}
+        link5={asertivaLink5}
+        link6={asertivaLink6}
         finalBajo={communicationAsertivaBajo}
         finalMedio={communicationAsertivaMedio}
         finalAlto={comuncacionAsertivaAlto}
@@ -65,8 +85,12 @@ function App() {
         subText={subText2}
         handleCheck={handleCheck}
         questions={questions2}
-        link1={link1}
-        link2={link2}
+        link1={caracterLink1}
+        link2={caracterLink2}
+        link3={caracterLink3}
+        link4={caracterLink4}
+        link5={caracterLink5}
+        link6={caracterLink6}
         finalBajo={caracterBajo}
         finalMedio={caracterMedio}
         finalAlto={caracterAlto}
@@ -78,8 +102,12 @@ function App() {
         subText={subText3}
         handleCheck={handleCheck}
         questions={questions3}
-        link1={link1}
-        link2={link2}
+        link1={liderazgoLink1}
+        link2={liderazgoLink2}
+        link3={liderazgoLink3}
+        link4={liderazgoLink4}
+        link5={liderazgoLink5}
+        link6={liderazgoLink6}
         finalBajo={finalLiderazgoRangoBajo}
         finalMedio={liderazgoRangoMedio}
         finalAlto={finalLiderazgorangoAlto}

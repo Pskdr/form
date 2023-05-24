@@ -1,6 +1,14 @@
 import React from "react";
 
-const FinalStep = ({ title, text, setFinalStep, link, finalArray }) => {
+const FinalStep = ({
+  title,
+  text1,
+  text2,
+  link1,
+  link2,
+  setFinalStep,
+  finalArray,
+}) => {
   return (
     <div className="form2" style={{ display: "row" }}>
       <button className="button" onClick={() => setFinalStep(true)}>
@@ -14,8 +22,11 @@ const FinalStep = ({ title, text, setFinalStep, link, finalArray }) => {
         <p key={item.id}>{item.text}</p>
       ))}
       <p>
-        {text}
-        <a href={link}>{link}</a>
+        {text1}
+        <a href={link1}>{link1}</a>
+        {text2}
+
+        <a href={link2}>{link2}</a>
       </p>
     </div>
   );

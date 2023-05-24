@@ -10,6 +10,10 @@ const Comunication = ({
   questions,
   link1,
   link2,
+  link3,
+  link4,
+  link5,
+  link6,
   finalBajo,
   finalMedio,
   finalAlto,
@@ -31,25 +35,31 @@ const Comunication = ({
       const promedio = sum / questions.length;
 
       if (promedio <= 5) {
-        setText(
-          "Su promedio es: " + promedio + "\n Para aprender más use este link "
-        );
-        setLink(link1);
+        setText1("Su promedio es: " + promedio + "\n Recomendado, haz click ");
+        setLink1(link1);
+        setText2("Quieres conocer mas?, has click: ");
+        setLink2(link2);
         setFinalArray(finalBajo);
         setFinalStep(false);
       } else {
         if (5 < promedio && promedio < 7.9) {
-          setText(
-            "Su promedio es: " +
-              promedio +
-              "\n Para aprender más use este link: "
+          setText1(
+            "Su promedio es: " + promedio + "\n Recomendado, haz click: "
           );
-          setLink(link2);
+          setLink1(link3);
+          setText2("Quieres conocer mas?, has click: ");
+          setLink2(link4);
           setFinalArray(finalMedio);
           setFinalStep(false);
         } else {
-          setText("Su promedio es: " + promedio + "\n ¡Buen trabajo!");
-          setLink("");
+          setText1(
+            "Su promedio es: " +
+              promedio +
+              "\n ¡Buen trabajo! \n Recomendado, haz click"
+          );
+          setLink1(link5);
+          setText2("Quieres conocer mas?, has click: ");
+          setLink1(link6);
           setFinalStep(false);
           setFinalArray(finalAlto);
         }
@@ -58,8 +68,10 @@ const Comunication = ({
       alert("Todas las preguntas son obligatorias");
     }
   };
-  const [text, setText] = useState("");
-  const [link, setLink] = useState("");
+  const [text1, setText1] = useState("");
+  const [text2, setText2] = useState("");
+  const [link1E, setLink1] = useState("");
+  const [link2E, setLink2] = useState("");
   return (
     <div className="form">
       {finalStep ? (
@@ -94,9 +106,11 @@ const Comunication = ({
       ) : (
         <FinalStep
           title={title}
-          text={text}
+          text1={text1}
+          text2={text2}
           setFinalStep={setFinalStep}
-          link={link}
+          link1={link1E}
+          link2={link2E}
           finalArray={finalArray}
         />
       )}
