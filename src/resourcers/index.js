@@ -493,4 +493,5 @@ export const caracterAlto = [
 export const link1 =
   "https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/";
 
-export const link2 = "https://www.youtube.com/watch?v=16z28DjRTAA";
+export const link2 =
+  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/";

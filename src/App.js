@@ -12,6 +12,15 @@ import {
   subText3,
   link1,
   link2,
+  finalLiderazgoRangoBajo,
+  liderazgoRangoMedio,
+  finalLiderazgorangoAlto,
+  communicationAsertivaBajo,
+  communicationAsertivaMedio,
+  comuncacionAsertivaAlto,
+  caracterBajo,
+  caracterMedio,
+  caracterAlto,
 } from "./resourcers/index";
 import Inicio from "./components/Inicio";
 import Prev from "./components/Prev";
@@ -45,6 +54,9 @@ function App() {
         questions={questions1}
         link1={link1}
         link2={link2}
+        finalBajo={communicationAsertivaBajo}
+        finalMedio={communicationAsertivaMedio}
+        finalAlto={comuncacionAsertivaAlto}
       />
     ),
     [STEP_CARACTER]: (
@@ -55,6 +67,9 @@ function App() {
         questions={questions2}
         link1={link1}
         link2={link2}
+        finalBajo={caracterBajo}
+        finalMedio={caracterMedio}
+        finalAlto={caracterAlto}
       />
     ),
     [STEP_LIDERAZGO]: (
@@ -65,6 +80,9 @@ function App() {
         questions={questions3}
         link1={link1}
         link2={link2}
+        finalBajo={finalLiderazgoRangoBajo}
+        finalMedio={liderazgoRangoMedio}
+        finalAlto={finalLiderazgorangoAlto}
       />
     ),
     [STEP_OTHERS]: info ? (
