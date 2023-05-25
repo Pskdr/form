@@ -23,12 +23,16 @@ const FinalStep = ({
       ))}
       <p>{text1}</p>
       <p>
-        <a href={link1}>{link1}</a>
+        <a style={{ maxWidth: "200px" }} href={link1}>
+          HAZ CLICK AQUÍ
+        </a>
       </p>
       {text2}
 
       <p>
-        <a href={link2}>{link2}</a>
+        <a style={{ maxWidth: "200px" }} href={link2}>
+          HAZ CLICK AQUÍ
+        </a>
       </p>
       <a
         href="
