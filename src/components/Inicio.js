@@ -4,7 +4,7 @@ const Inicio = ({ logo, setLogo }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLogo(false);
-    }, 6000);
+    }, 3000);
 
     // Clean up the timer when the component is unmounted
     return () => {
@@ -18,7 +18,7 @@ const Inicio = ({ logo, setLogo }) => {
         alt="Competencias poderosas"
         src={logo}
         className="logo"
-        style={{ width: "400px", height: "400px" }}
+        style={{ width: "auto", height: "auto", marginTop: "40dp" }}
       />
     </div>
   );

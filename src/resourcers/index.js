@@ -493,14 +493,14 @@ export const caracterAlto = [
 export const liderazgoLink1 =
   "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/";
 export const liderazgoLink2 =
-  "https://www.pmi.org/ https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
 export const liderazgoLink3 = "https://www.youtube.com/watch?v=atjonjXCGh0";
 export const liderazgoLink4 =
-  "https://www.pmi.org/ https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
 export const liderazgoLink5 =
   "https://aprendemosjuntos.bbva.com/especial/como-son-los-grandes-lideres-de-manu-ginobili-a-tim-duncan-ettore-messina/";
 export const liderazgoLink6 =
-  "https://www.pmi.org/ https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
 
 export const asertivaLink1 =
   "https://aprendemosjuntos.bbva.com/especial/todos-necesitamos-aprender-a-hablar-en-publico-manuel-campo-vidal/";
