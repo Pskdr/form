@@ -24,14 +24,14 @@ const FinalStep = ({
       <p>{text1}</p>
       <p>
         <a style={{ maxWidth: "200px" }} href={link1}>
-          {link1 ? "HAZ CLIK AQUÍ" : null}
+          {link1 !== "" ? "HAZ CLIK AQUÍ" : null}
         </a>
       </p>
       {text2}
 
       <p>
         <a style={{ maxWidth: "200px" }} href={link2}>
-          {link2 ? "HAZ CLIK AQUÍ" : null}
+          {link2 !== "" ? "HAZ CLIK AQUÍ" : null}
         </a>
       </p>
       <a
