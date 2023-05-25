@@ -497,8 +497,8 @@ export const liderazgoLink3 = "https://www.youtube.com/watch?v=atjonjXCGh0";
 export const liderazgoLink4 = "https://www.youtube.com/watch?v=16z28DjRTAA";
 export const liderazgoLink5 =
   "https://aprendemosjuntos.bbva.com/especial/como-son-los-grandes-lideres-de-manu-ginobili-a-tim-duncan-ettore-messina/";
-export const liderazgoLink6 = "";
-
+export const liderazgoLink6 =
+  "https://aprendemosjuntos.bbva.com/especial/como-son-los-grandes-lideres-de-manu-ginobili-a-tim-duncan-ettore-messina/";
 export const asertivaLink1 =
   "https://aprendemosjuntos.bbva.com/especial/todos-necesitamos-aprender-a-hablar-en-publico-manuel-campo-vidal/";
 export const asertivaLink2 = "";
@@ -518,4 +518,5 @@ export const caracterLink3 =
 export const caracterLink4 = "";
 export const caracterLink5 =
   "https://www.linkedin.com/search/results/content/?keywords=competencias%20caracter&searchId=3b536e64-764a-4c67-9c2b-afc9fd12bd07&sid=TCT&update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A7056604346930622464%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse)";
-export const caracterLink6 = "";
+export const caracterLink6 =
+  "https://www.linkedin.com/search/results/content/?keywords=competencias%20caracter&searchId=3b536e64-764a-4c67-9c2b-afc9fd12bd07&sid=TCT&update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A7056604346930622464%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse) ";
