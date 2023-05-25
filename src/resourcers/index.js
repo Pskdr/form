@@ -490,40 +490,31 @@ export const caracterAlto = [
   },
 ];
 
-export const liderazgoLink1 =
-  "https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/";
+export const liderazgoLink1 = "";
 export const liderazgoLink2 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+  "https://infolibros.org/libros-pdf-gratis/superacion-personal/liderazgo/";
 export const liderazgoLink3 = "https://www.youtube.com/watch?v=atjonjXCGh0";
-export const liderazgoLink4 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const liderazgoLink4 = "https://www.youtube.com/watch?v=16z28DjRTAA";
 export const liderazgoLink5 =
   "https://aprendemosjuntos.bbva.com/especial/como-son-los-grandes-lideres-de-manu-ginobili-a-tim-duncan-ettore-messina/";
-export const liderazgoLink6 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const liderazgoLink6 = "";
 
 export const asertivaLink1 =
   "https://aprendemosjuntos.bbva.com/especial/todos-necesitamos-aprender-a-hablar-en-publico-manuel-campo-vidal/";
-export const asertivaLink2 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const asertivaLink2 = "";
 export const asertivaLink3 =
   "https://aprendemosjuntos.bbva.com/especial/nuestra-escritura-nos-representa-estrella-montolio/";
-export const asertivaLink4 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const asertivaLink4 = "";
 export const asertivaLink5 =
   "https://aprendemosjuntos.bbva.com/especial/espacio-y-tiempo-una-cuestion-de-lengua-lera-boroditsky/";
-export const asertivaLink6 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const asertivaLink6 = "";
 
 export const caracterLink1 =
   "https://www.profitecnicas.com/libro/caracter-y-competencias-del-lider-1ra-edicion_248778";
-export const caracterLink2 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const caracterLink2 = "";
 export const caracterLink3 =
   "https://www.linkedin.com/pulse/el-verdadero-car%C3%A1cter-de-un-l%C3%ADder-liliana-perdomo-cortes/?originalSubdomain=es";
-export const caracterLink4 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const caracterLink4 = "";
 export const caracterLink5 =
   "https://www.linkedin.com/search/results/content/?keywords=competencias%20caracter&searchId=3b536e64-764a-4c67-9c2b-afc9fd12bd07&sid=TCT&update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A7056604346930622464%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse)";
-export const caracterLink6 =
-  "https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s";
+export const caracterLink6 = "";

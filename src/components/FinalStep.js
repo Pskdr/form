@@ -21,12 +21,29 @@ const FinalStep = ({
       {finalArray.map((item) => (
         <p key={item.id}>{item.text}</p>
       ))}
+      <p>{text1}</p>
       <p>
-        {text1}
         <a href={link1}>{link1}</a>
-        {text2}
+      </p>
+      {text2}
 
+      <p>
         <a href={link2}>{link2}</a>
+      </p>
+      <a
+        href="
+https://www.pmi.org/
+"
+      >
+        https://www.pmi.org/
+      </a>
+      <p>
+        <a
+          href="
+https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s"
+        >
+          https://www.youtube.com/watch?v=y7B2ZtDPOaQ&t=196s
+        </a>
       </p>
     </div>
   );
