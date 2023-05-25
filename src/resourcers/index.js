@@ -507,7 +507,8 @@ export const asertivaLink3 =
 export const asertivaLink4 = "";
 export const asertivaLink5 =
   "https://aprendemosjuntos.bbva.com/especial/espacio-y-tiempo-una-cuestion-de-lengua-lera-boroditsky/";
-export const asertivaLink6 = "";
+export const asertivaLink6 =
+  "https://aprendemosjuntos.bbva.com/especial/espacio-y-tiempo-una-cuestion-de-lengua-lera-boroditsky/";
 
 export const caracterLink1 =
   "https://www.profitecnicas.com/libro/caracter-y-competencias-del-lider-1ra-edicion_248778";
